@@ -1,0 +1,30 @@
+html, body {
+	width: 100%;
+	font-size: 16px;
+}
+
+nav {
+	width: 90%;
+	margin: 0% auto;
+	text-align: right;
+}
+
+nav>img {
+	display: inline-block;
+	width: 1.75rem;
+	margin: 0% 5%;
+	vertical-align: middle;
+}
+
+nav>ul {
+	list-style: none;
+	display: inline-block;
+	width: 80%;
+	vertical-align: middle;
+}
+
+nav>ul>li {
+	display: inline-block;
+	margin: 0.5rem 1rem;
+	text-align: center;
+}
