@@ -4,7 +4,7 @@ body {
 	font-size: 16px;
 }
 
-header {
+.wrapper {
 	width: 60%;
 	margin: 0% auto;
 }
@@ -14,12 +14,12 @@ header {
 	margin: 0.5rem;
 }
 
-nav {
+.top_navigation {
 	width: 90%;
 	display: inline-block;
 }
 
-nav>ul {
+.top_navigation>ul {
 	list-style: none;
 	display: block;
 	padding: 0%;
@@ -28,29 +28,29 @@ nav>ul {
 	text-align: right;
 }
 
-nav>ul>li {
+.top_navigation>ul>li {
 	display: inline-block;
 	text-align: center;
 }
 
-nav>ul>li>a:link, 
-nav>ul>li>a:visited {
+.top_navigation>ul>li>a:link, 
+.top_navigation>ul>li>a:visited {
 	padding: 0.5rem 1rem;
 	display: block;
 	text-decoration: none;
 	color: #838994;
 }
 
-nav>ul>li>a:hover, 
-nav>ul>li>a:focus, 
-nav>ul>li>a:active, 
-nav>ul>li>a.active {
+.top_navigation>ul>li>a:hover, 
+.top_navigation>ul>li>a:focus, 
+.top_navigation>ul>li>a:active, 
+.top_navigation>ul>li>a.active {
 	color: #000000;
 }
 
 @media only screen and (max-width: 1500px) {
-	header,
-	nav {
+	.wrapper,
+	.top_navigation {
         width: 100%;
     }
 
@@ -59,27 +59,27 @@ nav>ul>li>a.active {
     	margin: 0.75rem auto;    	
     }
 
-	nav>ul {
+	.top_navigation>ul {
 		float: none;
 		width: 100%;
 	}
 
-	nav>ul>li{
+	.top_navigation>ul>li{
 		width: 50%; 
 		float: left; 
 		border-top: 0.05rem solid #000000;
 	}
 
-	nav>ul>li a {
+	.top_navigation>ul>li a {
 		padding: 0.75rem 1rem;
 	}
 
-	nav>ul>li:nth-of-type(odd) a {
+	.top_navigation>ul>li:nth-of-type(odd) a {
 		border-right: 0.05rem solid #000000;
 	}
 }
 
-main {
+.clear {
 	clear: both;
 }
 
