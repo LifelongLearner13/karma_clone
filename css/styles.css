@@ -15,6 +15,14 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+header {
+	position: fixed;
+	border-bottom: 1px solid #DDD;
+    z-index: 9999;
+    background-color: #fff;
+    width: 100%;
+    position: top;
+}
 .wrapper {
 	width: 60%; 
 	margin: 0% auto;
@@ -88,8 +96,9 @@ body {
 		border-top: 0.05rem solid #000000;
 	}
 
-	.top_navigation>ul>li a {
-		padding: 0.75rem 1rem;
+	.top_navigation>ul>li>a:link, 
+	.top_navigation>ul>li>a:visited {
+		padding: 0.5rem 0.25rem;
 	}
 
 	.top_navigation>ul>li:nth-of-type(odd) a {
@@ -106,11 +115,11 @@ body {
 	background: url(../images/masthead_bg.jpg) no-repeat center bottom;
 	background-size: cover;
 	text-align: center;
-	padding: 8rem 0rem 19rem 0rem;
+	padding: 12rem 0rem 19rem 0rem;
 	color: #FFFFFF;
 }
 
-.masthead h1, .masthead h3 {
+.masthead h1, .masthead p {
 	font-weight: 300;
 }
 
@@ -119,7 +128,7 @@ body {
 	margin: 0rem;
 }
 
-.masthead h3 {
+.masthead p {
 	margin: 1.25rem 0rem;
     font-size: 1.563rem;
 }
@@ -145,6 +154,47 @@ body {
 
 @media only screen and (max-width: 1000px) {
 	.masthead {
-		padding: 8rem 0rem 9rem 0rem;
+		padding: 15rem 0rem 0rem 0rem;
+    	height: 35rem;
+    	background-position: 60% 100%;
 	}
+}
+
+.cases {
+	margin-top: 5rem;
+}
+
+.cases h2 {
+	color: #000000;
+	text-align: center;
+	font-size: 3.125rem;
+	margin: 0rem;
+	font-weight: 300;
+}
+
+.cases>ul {
+	list-style: none;
+	padding: 0rem;
+	margin: 3rem 0rem 5rem 0rem;
+}
+
+.cases>ul>li {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}
+
+.cases>ul>li:not(:last-child) {
+	margin-right: 3%;
+}
+
+.icon {
+	width: 40%;
+	margin: 0rem auto;
+}
+
+.caption {
+	font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
 }
