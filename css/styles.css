@@ -182,6 +182,7 @@ header {
 	display: inline-block;
 	width: 30%;
 	text-align: center;
+	vertical-align: top;
 }
 
 .cases>ul>li:not(:last-child) {
@@ -198,6 +199,18 @@ header {
     font-size: 1.563rem;
     margin: 2.5rem 0px 1.875rem;
 }
+
+@media only screen and (max-width: 1000px) {
+	.cases h2 {
+		font-size: 2rem;
+	}
+
+	.caption {
+		font-size: 1.25rem;
+		margin-bottom: 0rem;
+	}
+}
+
 .social {
 	background-color: #FFFFFF;
     overflow: auto;
